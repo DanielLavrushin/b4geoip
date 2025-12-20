@@ -1,0 +1,55 @@
+{
+  "input": [
+    {
+      "type": "v2rayGeoIPDat",
+      "action": "add",
+      "args": {
+        "uri": "https://raw.githubusercontent.com/runetfreedom/russia-v2ray-rules-dat/release/geoip.dat"
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "github",
+        "uri": "https://api.github.com/meta",
+        "jsonPath": [
+          "hooks",
+          "web",
+          "api",
+          "git",
+          "github_enterprise_importer",
+          "packages",
+          "pages",
+          "importer",
+          "actions",
+          "actions_macos",
+          "codespaces",
+          "copilot"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "amazon",
+        "uri": "https://ip-ranges.amazonaws.com/ip-ranges.json",
+        "jsonPath": [
+          "prefixes.#(service==\"AMAZON\")#.ip_prefix",
+          "ipv6_prefixes.#(service==\"AMAZON\")#.ipv6_prefix"
+        ]
+      }
+    }
+  ],
+  "output": [
+    {
+      "type": "v2rayGeoIPDat",
+      "action": "output",
+      "args": {
+        "outputDir": "./output",
+        "outputName": "geoip.dat"
+      }
+    }
+  ]
+}
