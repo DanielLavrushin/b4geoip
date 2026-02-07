@@ -2,3 +2,7 @@ output/
 geolite2/
 vendor/
 geoip
+
+
+#Ignore vscode AI rules
+.github/instructions/codacy.instructions.md

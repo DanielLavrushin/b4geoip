@@ -33,11 +33,539 @@
       "type": "json",
       "action": "add",
       "args": {
+        "name": "github",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=36459",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
         "name": "amazon",
         "uri": "https://ip-ranges.amazonaws.com/ip-ranges.json",
         "jsonPath": [
           "prefixes.#(service==\"AMAZON\")#.ip_prefix",
           "ipv6_prefixes.#(service==\"AMAZON\")#.ipv6_prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "roblox",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=22697",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "roblox",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=11281",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "oracle",
+        "uri": "https://docs.oracle.com/en-us/iaas/tools/public_ip_ranges.json",
+        "jsonPath": [
+          "regions.#.cidrs.#.cidr|@flatten"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "valve",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=32590",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "google",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=15169",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "akamai",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=16899",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "akamai",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=20940",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "akamai",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=32787",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "akamai",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=20189",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "digitalocean",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=14061",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "digitalocean",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=62567",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "fastly",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=54113",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "sony",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=33353",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "sony",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=25562",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "sony",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=25562",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "sony",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=139808",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "sony",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=2527",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "sony",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=13720",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "nintendo",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=11278",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "adobe",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=15224",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "cloudflare",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=13335",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "hetzner",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=213230",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "hetzner",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=212317",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "hetzner",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=215859",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "hetzner",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=24940",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "hetzner",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=37153",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "apple",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=6185",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "apple",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=714",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "ovh",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=35540",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "ovh",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=16276",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "blizzard",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=57976",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "electronicarts",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=393349",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "electronicarts",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=33572",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "electronicarts",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=31223",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "electronicarts",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=60220",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "riot",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=6507",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "ubisoft",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=22634",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "ubisoft",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=49544",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "ubisoft",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=8361",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "ubisoft",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=55743",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "bungie",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=394073",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "cdn77",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=60068",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "contabo",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=51167",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "contabo",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=141995",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "telegram",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=59930",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "telegram",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=62041",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "telegram",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=62014",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
         ]
       }
     }
