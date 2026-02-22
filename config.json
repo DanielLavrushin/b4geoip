@@ -112,7 +112,7 @@
       "action": "add",
       "args": {
         "name": "akamai",
-        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=16899",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=17204",
         "jsonPath": [
           "data.prefixes.#.prefix"
         ]
@@ -123,7 +123,7 @@
       "action": "add",
       "args": {
         "name": "akamai",
-        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=20940",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=26008",
         "jsonPath": [
           "data.prefixes.#.prefix"
         ]
@@ -145,7 +145,172 @@
       "action": "add",
       "args": {
         "name": "akamai",
-        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=20189",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=213120",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "akamai",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=31108",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "akamai",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=21342",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "akamai",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=63949",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "akamai",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=34164",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "akamai",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=36183",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "akamai",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=200005",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "akamai",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=20940",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "akamai",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=49846",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "akamai",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=393560",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "akamai",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=393234",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "akamai",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=16625",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "akamai",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=12222",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "akamai",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=24319",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "akamai",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=33905",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "akamai",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=35994",
         "jsonPath": [
           "data.prefixes.#.prefix"
         ]
@@ -355,6 +520,17 @@
       "args": {
         "name": "apple",
         "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=714",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "apple",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=216183",
         "jsonPath": [
           "data.prefixes.#.prefix"
         ]
