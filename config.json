@@ -843,6 +843,105 @@
           "data.prefixes.#.prefix"
         ]
       }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "aeza",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=216246",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "aeza",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=210644",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "ccp",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=35834",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "scaleway",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=54265",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "scaleway",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=29447",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "scaleway",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=202023",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "scaleway",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=12876",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "constant",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=46407",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "constant",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=20473",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
     }
   ],
   "output": [

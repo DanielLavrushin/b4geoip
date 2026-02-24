@@ -4,33 +4,48 @@ b4geoip является расширенной версией geoip.dat биб�
 
 Дополнительно включает в себя категории:
 
-- geoip:adobe
-- geoip:akamai
-- geoip:amazon
-- geoip:apple
+## Gaming
+
 - geoip:blizzard
 - geoip:bungie
-- geoip:cdn77
-- geoip:cloudflare
-- geoip:contabo
-- geoip:digitalocean
+- geoip:ccp
 - geoip:electronicarts
 - geoip:epicgames
-- geoip:fastly
-- geoip:github
-- geoip:google
-- geoip:hetzner
 - geoip:nintendo
-- geoip:oracle
-- geoip:ovh
 - geoip:riot
 - geoip:roblox
 - geoip:sony
 - geoip:taketwo
-- geoip:telegram
 - geoip:ubisoft
 - geoip:valve
 - geoip:wargaming
+
+## Cloud / CDN
+
+- geoip:aeza
+- geoip:akamai
+- geoip:amazon
+- geoip:cdn77
+- geoip:cloudflare
+- geoip:constant
+- geoip:contabo
+- geoip:digitalocean
+- geoip:fastly
+- geoip:hetzner
+- geoip:oracle
+- geoip:ovh
+- geoip:scaleway
+
+## Tech
+
+- geoip:adobe
+- geoip:apple
+- geoip:github
+- geoip:google
+
+## Messaging
+
+- geoip:telegram
 
 Прямая ссылка на последнюю версию (обновляется раз в день):
 
