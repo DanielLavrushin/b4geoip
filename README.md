@@ -15,6 +15,7 @@ b4geoip является расширенной версией geoip.dat биб�
 - geoip:contabo
 - geoip:digitalocean
 - geoip:electronicarts
+- geoip:epicgames
 - geoip:fastly
 - geoip:github
 - geoip:google
@@ -25,9 +26,11 @@ b4geoip является расширенной версией geoip.dat биб�
 - geoip:riot
 - geoip:roblox
 - geoip:sony
+- geoip:taketwo
 - geoip:telegram
 - geoip:ubisoft
 - geoip:valve
+- geoip:wargaming
 
 Прямая ссылка на последнюю версию (обновляется раз в день):
 

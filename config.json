@@ -376,7 +376,7 @@
       "action": "add",
       "args": {
         "name": "sony",
-        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=25562",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=11795",
         "jsonPath": [
           "data.prefixes.#.prefix"
         ]
@@ -409,7 +409,29 @@
       "action": "add",
       "args": {
         "name": "sony",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=397077",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "sony",
         "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=13720",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "nintendo",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=210492",
         "jsonPath": [
           "data.prefixes.#.prefix"
         ]
@@ -617,6 +639,39 @@
       "type": "json",
       "action": "add",
       "args": {
+        "name": "electronicarts",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=19541",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "riot",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=6507",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "riot",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=38118",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
         "name": "riot",
         "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=6507",
         "jsonPath": [
@@ -740,6 +795,50 @@
       "args": {
         "name": "telegram",
         "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=62014",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "taketwo",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=46555",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "epicgames",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=10747",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "wargaming",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=203663",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "wargaming",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=210366",
         "jsonPath": [
           "data.prefixes.#.prefix"
         ]
