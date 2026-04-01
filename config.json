@@ -89,6 +89,50 @@
       "type": "json",
       "action": "add",
       "args": {
+        "name": "oracle",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=31898",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "oracle",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=6142",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "oracle",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=20054",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "oracle",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=54253",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
         "name": "valve",
         "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=32590",
         "jsonPath": [
@@ -804,6 +848,28 @@
       "type": "json",
       "action": "add",
       "args": {
+        "name": "telegram",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=211157",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "telegram",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=44907",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
         "name": "taketwo",
         "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=46555",
         "jsonPath": [
@@ -938,6 +1004,138 @@
       "args": {
         "name": "constant",
         "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=20473",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "buyvm",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=53667",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "cogent",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=174",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "datacamp",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=212238",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "gcore",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=199524",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "gcore",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=202422",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "glesys",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=42708",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "gthost",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=63023",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "melbicom",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=8849",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "melbicom",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=56630",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "meta",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=32934",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "scalaxy",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=58061",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "anthropic",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=399358",
         "jsonPath": [
           "data.prefixes.#.prefix"
         ]
