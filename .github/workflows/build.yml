@@ -73,3 +73,11 @@ jobs:
           file: ./output/*
           release_name: ${{ env.RELEASE_NAME }}
           tag: ${{ env.TAG_NAME }}
+
+      - name: Delete old releases
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release list --limit 200 --json tagName -q '.[].tagName' | \
+            grep -v "^${{ env.TAG_NAME }}$" | \
+            xargs -I {} sh -c 'gh release delete "{}" --yes --cleanup-tag || true'
