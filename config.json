@@ -1140,6 +1140,17 @@
           "data.prefixes.#.prefix"
         ]
       }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "play2go",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=215439",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
     }
   ],
   "output": [
