@@ -1151,6 +1151,50 @@
           "data.prefixes.#.prefix"
         ]
       }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "zerocdn",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=48158",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "digitalone",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=48158",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "digitalone",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=47328",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "belcloud",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=44901",
+        "jsonPath": [
+          "data.prefixes.#.prefix"
+        ]
+      }
     }
   ],
   "output": [
