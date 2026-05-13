@@ -27,10 +27,10 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Checkout runetfreedom/geoip
+      - name: Checkout Loyalsoldier/geoip
         uses: actions/checkout@v6
         with:
-          repository: runetfreedom/geoip
+          repository: Loyalsoldier/geoip
           path: geoip
 
       - name: Set up Go
