@@ -1,5 +1,7 @@
 # b4geoip
 
+![GitHub Downloads](https://img.shields.io/github/downloads/daniellavrushin/b4geoip/total)
+
 b4geoip является расширенной версией geoip.dat библиотеки от проекта [RUNETFREEDOM](https://github.com/runetfreedom/russia-blocked-geoip).
 
 Дополнительно включает в себя категории:
