@@ -991,7 +991,7 @@
       "action": "add",
       "args": {
         "name": "meganz",
-        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=138980",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=199124",
         "jsonPath": ["data.prefixes.#.prefix"]
       }
     },
