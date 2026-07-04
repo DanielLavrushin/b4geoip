@@ -2,6 +2,7 @@ output/
 geolite2/
 vendor/
 geoip
+generated/
 
 
 #Ignore vscode AI rules

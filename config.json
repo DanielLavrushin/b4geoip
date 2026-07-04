@@ -1003,6 +1003,24 @@
         "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=205809",
         "jsonPath": ["data.prefixes.#.prefix"]
       }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
+        "name": "vercel",
+        "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=922",
+        "jsonPath": ["data.prefixes.#.prefix"]
+      }
+    },
+    {
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "vercel",
+        "uri": "./generated/vercel.txt",
+        "arinOrg": ["ZEITI"]
+      }
     }
   ],
   "output": [
