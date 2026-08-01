@@ -124,6 +124,15 @@ jobs:
           release_name: ${{ env.RELEASE_NAME }}
           tag: ${{ env.TAG_NAME }}
 
+      # GitHub picks "latest" by the tagged commit's date, which ties when the
+      # snapshot and the dated build point at the same commit. Pin it explicitly.
+      - name: Mark the dated build as latest
+        if: steps.changed.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh release edit "${{ env.TAG_NAME }}" --latest
+        shell: bash
+
       - name: Prune old releases
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
