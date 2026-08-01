@@ -21,6 +21,10 @@ jobs:
     env:
       TAG_NAME: ""
       RELEASE_NAME: ""
+      # Rolling dated builds to keep (the newest one backs releases/latest).
+      KEEP_DAILY: 3
+      # Immutable monthly snapshots to keep, for build systems that pin a checksum.
+      KEEP_MONTHLY: 12
     steps:
       - name: Checkout codebase
         uses: actions/checkout@v7
@@ -67,7 +71,50 @@ jobs:
           rm -rf ./output/GeoLite2-*.sha256sum
           rm -rf ./output/{clash,dat,mrs,nginx,srs,surge,text}
 
+      - name: Check whether the data actually changed
+        id: changed
+        run: |
+          new=$(awk '{print $1}' ./output/geoip.dat.sha256sum)
+          old=$(curl -fsSL "https://github.com/${{ github.repository }}/releases/latest/download/geoip.dat.sha256sum" 2>/dev/null | awk '{print $1}') || old=""
+          echo "current: ${old:-<none>}"
+          echo "built:   ${new}"
+          if [ -n "$old" ] && [ "$new" = "$old" ]; then
+            echo "Data is identical to the latest release, skipping publication."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+        shell: bash
+
+      # Published before the dated build so that releases/latest keeps pointing
+      # at the rolling build, not at the snapshot.
+      - name: Publish monthly snapshot
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          snapshot=$(date +%Y.%m)
+          if gh release view "$snapshot" >/dev/null 2>&1; then
+            echo "Snapshot $snapshot already exists, leaving it untouched."
+            exit 0
+          fi
+          notes="$RUNNER_TEMP/snapshot_notes.md"
+          cat > "$notes" <<EOF
+          Immutable monthly snapshot. These assets are never rebuilt or overwritten, so their
+          checksums are stable and safe to pin (Nix \`fetchurl\`, Bazel \`http_file\`, etc.).
+
+          \`\`\`text
+          https://github.com/${{ github.repository }}/releases/download/$snapshot/geoip.dat
+          \`\`\`
+
+          For an always-current build use \`releases/latest/download/geoip.dat\` instead.
+          EOF
+          gh release create "$snapshot" ./output/* \
+            --title "Snapshot $snapshot" \
+            --notes-file "$notes"
+        shell: bash
+
       - name: Upload files to GitHub release
+        if: steps.changed.outputs.changed == 'true'
         uses: svenstaro/upload-release-action@v2
         with:
           overwrite: true
@@ -77,10 +124,22 @@ jobs:
           release_name: ${{ env.RELEASE_NAME }}
           tag: ${{ env.TAG_NAME }}
 
-      - name: Delete old releases
+      - name: Prune old releases
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh release list --limit 200 --json tagName -q '.[].tagName' | \
-            grep -v "^${{ env.TAG_NAME }}$" | \
-            xargs -I {} sh -c 'gh release delete "{}" --yes --cleanup-tag || true'
+          all="$RUNNER_TEMP/all_tags.txt"
+          stale="$RUNNER_TEMP/stale_tags.txt"
+          gh release list --limit 500 --json tagName -q '.[].tagName' > "$all"
+
+          # Dated builds (YYYYMMDDHHMM): keep the newest KEEP_DAILY.
+          grep -E '^[0-9]{12}$' "$all" | sort -r | tail -n "+$((KEEP_DAILY + 1))" > "$stale" || true
+          # Monthly snapshots (YYYY.MM): keep the newest KEEP_MONTHLY.
+          grep -E '^[0-9]{4}\.[0-9]{2}$' "$all" | sort -r | tail -n "+$((KEEP_MONTHLY + 1))" >> "$stale" || true
+
+          while read -r tag; do
+            [ -n "$tag" ] || continue
+            echo "Deleting release $tag"
+            gh release delete "$tag" --yes --cleanup-tag || true
+          done < "$stale"
+        shell: bash

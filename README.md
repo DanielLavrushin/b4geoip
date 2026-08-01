@@ -63,8 +63,21 @@ b4geoip является расширенной версией geoip.dat биб�
 
 - geoip:telegram
 
-Прямая ссылка на последнюю версию (обновляется раз в день):
+## Загрузка
+
+Прямая ссылка на последнюю версию (обновляется раз в день, контрольная сумма меняется):
 
 ```text
 https://github.com/DanielLavrushin/b4geoip/releases/latest/download/geoip.dat
 ```
+
+Для систем сборки, которым нужна фиксированная контрольная сумма (Nix `fetchurl`,
+Bazel `http_file` и т.п.), используйте ежемесячные снимки `YYYY.MM`. Они собираются
+один раз в начале месяца и больше никогда не перезаписываются, поэтому их хеш стабилен:
+
+```text
+https://github.com/DanielLavrushin/b4geoip/releases/download/2026.08/geoip.dat
+https://github.com/DanielLavrushin/b4geoip/releases/download/2026.08/geoip.dat.sha256sum
+```
+
+Снимки хранятся 12 месяцев.
