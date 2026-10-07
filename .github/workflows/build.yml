@@ -48,8 +48,8 @@ jobs:
           echo "RELEASE_NAME=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
         shell: bash
 
-      - name: Generate CIDR lists from ARIN registry
-        run: go run ./scripts/arin.go
+      - name: Fetch sources the converter can't read directly
+        run: go run ./scripts/fetch
 
       - name: Build geoip files
         run: |

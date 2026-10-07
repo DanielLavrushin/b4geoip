@@ -54,6 +54,16 @@
       "type": "json",
       "action": "add",
       "args": {
+        "name": "azure",
+        "uri": "./generated/azure.json",
+        "azureServiceTags": "56519",
+        "jsonPath": ["values.#.properties.addressPrefixes"]
+      }
+    },
+    {
+      "type": "json",
+      "action": "add",
+      "args": {
         "name": "roblox",
         "uri": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=22697",
         "jsonPath": ["data.prefixes.#.prefix"]

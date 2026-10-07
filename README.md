@@ -26,6 +26,7 @@ b4geoip является расширенной версией geoip.dat биб�
 - geoip:aeza
 - geoip:akamai
 - geoip:amazon
+- geoip:azure
 - geoip:belcloud
 - geoip:buyvm
 - geoip:cdn77
